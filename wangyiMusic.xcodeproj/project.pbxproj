@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04D17003202E9C7E003412C1 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04D17002202E9C7E003412C1 /* MethodTraceConfig.plist */; };
+		04D17006202E9C7E003412C1 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = 04D17005202E9C7E003412C1 /* put ipa or app here */; };
+		04D1700E202E9C7E003412C1 /* libwangyiMusicDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04D1700D202E9C7E003412C1 /* libwangyiMusicDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04D17013202E9C7E003412C1 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D17012202E9C7E003412C1 /* JavaScriptCore.framework */; };
+		04D17015202E9C7E003412C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D17014202E9C7E003412C1 /* Foundation.framework */; };
+		04D17017202E9C7E003412C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D17016202E9C7E003412C1 /* UIKit.framework */; };
+		04D1701B202E9C7E003412C1 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D1701A202E9C7E003412C1 /* ANYMethodLog.h */; };
+		04D1701D202E9C7E003412C1 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D1701C202E9C7E003412C1 /* ANYMethodLog.m */; };
+		04D1701F202E9C7E003412C1 /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D1701E202E9C7E003412C1 /* MethodTrace.h */; };
+		04D17021202E9C7E003412C1 /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D17020202E9C7E003412C1 /* MethodTrace.m */; };
+		04D17026202E9C7E003412C1 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D17025202E9C7E003412C1 /* AntiAntiDebug.m */; };
+		04D17029202E9C7E003412C1 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 04D17028202E9C7E003412C1 /* fishhook.c */; };
+		04D1702B202E9C7E003412C1 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D1702A202E9C7E003412C1 /* fishhook.h */; };
+		04D1702E202E9C7E003412C1 /* wangyiMusicDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D1702D202E9C7E003412C1 /* wangyiMusicDylib.mm */; };
+		04D17030202E9C7E003412C1 /* wangyiMusicDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D1702F202E9C7E003412C1 /* wangyiMusicDylib.h */; };
+		04D17032202E9C7E003412C1 /* wangyiMusicDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D17031202E9C7E003412C1 /* wangyiMusicDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04D1700F202E9C7E003412C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04D16FF4202E9C7E003412C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04D1700C202E9C7E003412C1;
+			remoteInfo = wangyiMusicDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04D16FFC202E9C7E003412C1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04D1700E202E9C7E003412C1 /* libwangyiMusicDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04D16FFF202E9C7E003412C1 /* wangyiMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wangyiMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D17002202E9C7E003412C1 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		04D17005202E9C7E003412C1 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		04D17007202E9C7E003412C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D1700D202E9C7E003412C1 /* libwangyiMusicDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libwangyiMusicDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D17012202E9C7E003412C1 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		04D17014202E9C7E003412C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04D17016202E9C7E003412C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		04D1701A202E9C7E003412C1 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		04D1701C202E9C7E003412C1 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		04D1701E202E9C7E003412C1 /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		04D17020202E9C7E003412C1 /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		04D17023202E9C7E003412C1 /* wangyiMusicDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wangyiMusicDylib-Prefix.pch"; sourceTree = "<group>"; };
+		04D17025202E9C7E003412C1 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		04D17028202E9C7E003412C1 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		04D1702A202E9C7E003412C1 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		04D1702C202E9C7E003412C1 /* wangyiMusicDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = wangyiMusicDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		04D1702D202E9C7E003412C1 /* wangyiMusicDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = wangyiMusicDylib.mm; sourceTree = "<group>"; };
+		04D1702F202E9C7E003412C1 /* wangyiMusicDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wangyiMusicDylib.h; sourceTree = "<group>"; };
+		04D17031202E9C7E003412C1 /* wangyiMusicDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wangyiMusicDylib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04D16FF9202E9C7E003412C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D1700A202E9C7E003412C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D17013202E9C7E003412C1 /* JavaScriptCore.framework in Frameworks */,
+				04D17017202E9C7E003412C1 /* UIKit.framework in Frameworks */,
+				04D17015202E9C7E003412C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04D16FF3202E9C7E003412C1 = {
+			isa = PBXGroup;
+			children = (
+				04D17001202E9C7E003412C1 /* wangyiMusic */,
+				04D17018202E9C7E003412C1 /* wangyiMusicDylib */,
+				04D17011202E9C7E003412C1 /* Frameworks */,
+				04D17000202E9C7E003412C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04D17000202E9C7E003412C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04D16FFF202E9C7E003412C1 /* wangyiMusic.app */,
+				04D1700D202E9C7E003412C1 /* libwangyiMusicDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04D17001202E9C7E003412C1 /* wangyiMusic */ = {
+			isa = PBXGroup;
+			children = (
+				04D17002202E9C7E003412C1 /* MethodTraceConfig.plist */,
+				04D17007202E9C7E003412C1 /* Info.plist */,
+				04D17004202E9C7E003412C1 /* TargetApp */,
+			);
+			path = wangyiMusic;
+			sourceTree = "<group>";
+		};
+		04D17004202E9C7E003412C1 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				04D17005202E9C7E003412C1 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		04D17011202E9C7E003412C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04D17012202E9C7E003412C1 /* JavaScriptCore.framework */,
+				04D17014202E9C7E003412C1 /* Foundation.framework */,
+				04D17016202E9C7E003412C1 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04D17018202E9C7E003412C1 /* wangyiMusicDylib */ = {
+			isa = PBXGroup;
+			children = (
+				04D1702C202E9C7E003412C1 /* wangyiMusicDylib.xm */,
+				04D1702D202E9C7E003412C1 /* wangyiMusicDylib.mm */,
+				04D1702F202E9C7E003412C1 /* wangyiMusicDylib.h */,
+				04D17031202E9C7E003412C1 /* wangyiMusicDylib.m */,
+				04D17019202E9C7E003412C1 /* MethodTrace */,
+				04D17024202E9C7E003412C1 /* AntiAntiDebug */,
+				04D17027202E9C7E003412C1 /* fishhook */,
+				04D17022202E9C7E003412C1 /* Supporting Files */,
+			);
+			path = wangyiMusicDylib;
+			sourceTree = "<group>";
+		};
+		04D17019202E9C7E003412C1 /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				04D1701A202E9C7E003412C1 /* ANYMethodLog.h */,
+				04D1701C202E9C7E003412C1 /* ANYMethodLog.m */,
+				04D1701E202E9C7E003412C1 /* MethodTrace.h */,
+				04D17020202E9C7E003412C1 /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		04D17022202E9C7E003412C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04D17023202E9C7E003412C1 /* wangyiMusicDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04D17024202E9C7E003412C1 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				04D17025202E9C7E003412C1 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		04D17027202E9C7E003412C1 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				04D17028202E9C7E003412C1 /* fishhook.c */,
+				04D1702A202E9C7E003412C1 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		04D1700B202E9C7E003412C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D17030202E9C7E003412C1 /* wangyiMusicDylib.h in Headers */,
+				04D1701B202E9C7E003412C1 /* ANYMethodLog.h in Headers */,
+				04D1701F202E9C7E003412C1 /* MethodTrace.h in Headers */,
+				04D1702B202E9C7E003412C1 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04D16FFE202E9C7E003412C1 /* wangyiMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D17038202E9C7F003412C1 /* Build configuration list for PBXNativeTarget "wangyiMusic" */;
+			buildPhases = (
+				04D16FF8202E9C7E003412C1 /* Sources */,
+				04D16FF9202E9C7E003412C1 /* Frameworks */,
+				04D16FFA202E9C7E003412C1 /* ShellScript */,
+				04D16FFB202E9C7E003412C1 /* Resources */,
+				04D16FFC202E9C7E003412C1 /* CopyFiles */,
+				04D16FFD202E9C7E003412C1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04D17010202E9C7E003412C1 /* PBXTargetDependency */,
+			);
+			name = wangyiMusic;
+			productName = wangyiMusic;
+			productReference = 04D16FFF202E9C7E003412C1 /* wangyiMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04D1700C202E9C7E003412C1 /* wangyiMusicDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D17035202E9C7F003412C1 /* Build configuration list for PBXNativeTarget "wangyiMusicDylib" */;
+			buildPhases = (
+				04D17008202E9C7E003412C1 /* ShellScript */,
+				04D17009202E9C7E003412C1 /* Sources */,
+				04D1700A202E9C7E003412C1 /* Frameworks */,
+				04D1700B202E9C7E003412C1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wangyiMusicDylib;
+			productName = wangyiMusicDylib;
+			productReference = 04D1700D202E9C7E003412C1 /* libwangyiMusicDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04D16FF4202E9C7E003412C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = com.jailbreak.wangyi;
+				TargetAttributes = {
+					04D16FFE202E9C7E003412C1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					04D1700C202E9C7E003412C1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 04D16FF7202E9C7E003412C1 /* Build configuration list for PBXProject "wangyiMusic" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04D16FF3202E9C7E003412C1;
+			productRefGroup = 04D17000202E9C7E003412C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04D16FFE202E9C7E003412C1 /* wangyiMusic */,
+				04D1700C202E9C7E003412C1 /* wangyiMusicDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04D16FFB202E9C7E003412C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D17006202E9C7E003412C1 /* put ipa or app here in Resources */,
+				04D17003202E9C7E003412C1 /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04D16FFA202E9C7E003412C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		04D16FFD202E9C7E003412C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		04D17008202E9C7E003412C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04D16FF8202E9C7E003412C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D17009202E9C7E003412C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D17026202E9C7E003412C1 /* AntiAntiDebug.m in Sources */,
+				04D17021202E9C7E003412C1 /* MethodTrace.m in Sources */,
+				04D17029202E9C7E003412C1 /* fishhook.c in Sources */,
+				04D1702E202E9C7E003412C1 /* wangyiMusicDylib.mm in Sources */,
+				04D1701D202E9C7E003412C1 /* ANYMethodLog.m in Sources */,
+				04D17032202E9C7E003412C1 /* wangyiMusicDylib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04D17010202E9C7E003412C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04D1700C202E9C7E003412C1 /* wangyiMusicDylib */;
+			targetProxy = 04D1700F202E9C7E003412C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04D17033202E9C7F003412C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04D17034202E9C7F003412C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04D17036202E9C7F003412C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HVV5LMXSM3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wangyiMusicDylib/wangyiMusicDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libwangyiMusicDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"wangyiMusicDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+					"-framework",
+					Cycript,
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		04D17037202E9C7F003412C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = HVV5LMXSM3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wangyiMusicDylib/wangyiMusicDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libwangyiMusicDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"wangyiMusicDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04D17039202E9C7F003412C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HVV5LMXSM3;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = wangyiMusic/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = aaa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04D1703A202E9C7F003412C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HVV5LMXSM3;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = wangyiMusic/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = aaa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04D16FF7202E9C7E003412C1 /* Build configuration list for PBXProject "wangyiMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D17033202E9C7F003412C1 /* Debug */,
+				04D17034202E9C7F003412C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D17035202E9C7F003412C1 /* Build configuration list for PBXNativeTarget "wangyiMusicDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D17036202E9C7F003412C1 /* Debug */,
+				04D17037202E9C7F003412C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D17038202E9C7F003412C1 /* Build configuration list for PBXNativeTarget "wangyiMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D17039202E9C7F003412C1 /* Debug */,
+				04D1703A202E9C7F003412C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04D16FF4202E9C7E003412C1 /* Project object */;
+}
