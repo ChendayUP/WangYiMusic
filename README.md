@@ -7,6 +7,6 @@ NMAdvertisementManager广告数据管理类
 ```swift
 - (void)fetchStartupAdvertisement {
     [[%c(NMAdvertisementManager) defaultManager] performSelector:@selector(clearCachedResources)];
-[[%c(NMAdvertisementManager) defaultManager] performSelector:@selector(removeOldAdItems)];
+    [[%c(NMAdvertisementManager) defaultManager] performSelector:@selector(removeOldAdItems)];
 }
 ```
