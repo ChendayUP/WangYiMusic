@@ -23,6 +23,7 @@
 		04D1702E202E9C7E003412C1 /* wangyiMusicDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D1702D202E9C7E003412C1 /* wangyiMusicDylib.mm */; };
 		04D17030202E9C7E003412C1 /* wangyiMusicDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D1702F202E9C7E003412C1 /* wangyiMusicDylib.h */; };
 		04D17032202E9C7E003412C1 /* wangyiMusicDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D17031202E9C7E003412C1 /* wangyiMusicDylib.m */; };
+		04D63B212045548000D982D3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 04D63B202045548000D982D3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		04D1702D202E9C7E003412C1 /* wangyiMusicDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = wangyiMusicDylib.mm; sourceTree = "<group>"; };
 		04D1702F202E9C7E003412C1 /* wangyiMusicDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wangyiMusicDylib.h; sourceTree = "<group>"; };
 		04D17031202E9C7E003412C1 /* wangyiMusicDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wangyiMusicDylib.m; sourceTree = "<group>"; };
+		04D63B202045548000D982D3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		04D16FF3202E9C7E003412C1 = {
 			isa = PBXGroup;
 			children = (
+				04D63B202045548000D982D3 /* README.md */,
 				04D17001202E9C7E003412C1 /* wangyiMusic */,
 				04D17018202E9C7E003412C1 /* wangyiMusicDylib */,
 				04D17011202E9C7E003412C1 /* Frameworks */,
@@ -288,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D63B212045548000D982D3 /* README.md in Resources */,
 				04D17006202E9C7E003412C1 /* put ipa or app here in Resources */,
 				04D17003202E9C7E003412C1 /* MethodTraceConfig.plist in Resources */,
 			);
